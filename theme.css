@@ -1,0 +1,56 @@
+/* Soft Slate Dark 1.0.0. MIT. */
+
+body.theme-dark {
+  --background-primary: #232831;
+  --background-primary-alt: #232831;
+  --background-secondary: #2d3440;
+  --background-secondary-alt: #2d3440;
+  --background-modifier-form-field: #232831;
+  --background-modifier-border: #66758a;
+  --background-modifier-border-hover: #66758a;
+  --background-modifier-border-focus: #abd2ff;
+  --background-modifier-hover: color-mix(in srgb, #abd2ff 12%, #2d3440);
+  --background-modifier-active-hover: color-mix(in srgb, #abd2ff 18%, #2d3440);
+  --text-normal: #f1e6d4;
+  --text-muted: #d3c9b9;
+  --text-faint: #d3c9b9;
+  --text-accent: #abd2ff;
+  --text-accent-hover: #d6bbff;
+  --text-on-accent: #232831;
+  --interactive-accent: #abd2ff;
+  --interactive-accent-hover: #d6bbff;
+  --text-selection: color-mix(in srgb, #abd2ff 25%, #232831);
+  --text-highlight-bg: color-mix(in srgb, #f4bd78 23%, #232831);
+  --color-blue: #abd2ff;
+  --color-orange: #f4bd78;
+  --color-green: #a6d8b6;
+  --color-purple: #d6bbff;
+  --code-background: #2d3440;
+  --code-normal: #f1e6d4;
+  --code-comment: #d3c9b9;
+  --code-function: #abd2ff;
+  --code-keyword: #d6bbff;
+  --code-string: #a6d8b6;
+  --link-color: #abd2ff;
+  --link-external-color: #a6d8b6;
+  --icon-color: #d3c9b9;
+  --nav-item-color: #d3c9b9;
+  --nav-item-color-active: #f1e6d4;
+  --tab-text-color: #d3c9b9;
+}
+
+.workspace-split.mod-horizontal > .workspace-leaf + .workspace-leaf,
+.workspace-ribbon { border-color: var(--background-modifier-border); }
+.menu, .modal { border: 1px solid var(--background-modifier-border); }
+
+.workspace-leaf-content :focus-visible,
+.modal :focus-visible,
+.menu :focus-visible {
+  outline: 2px solid var(--text-accent);
+  outline-offset: -2px;
+}
+
+.markdown-rendered .list-bullet::after,
+.markdown-source-view .list-bullet::after {
+  background-color: var(--text-muted);
+}
