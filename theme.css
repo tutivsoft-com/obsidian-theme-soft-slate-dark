@@ -1,4 +1,4 @@
-/* Soft Slate Dark 1.0.0. MIT. */
+/* Soft Slate Dark 1.0.1. MIT. */
 
 body.theme-dark {
   --background-primary: #232831;
@@ -42,6 +42,10 @@ body.theme-dark {
 .workspace-split.mod-horizontal > .workspace-leaf + .workspace-leaf,
 .workspace-ribbon { border-color: var(--background-modifier-border); }
 .menu, .modal { border: 1px solid var(--background-modifier-border); }
+
+.is-mobile .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
+  padding-inline: 8px;
+}
 
 .workspace-leaf-content :focus-visible,
 .modal :focus-visible,

@@ -2,7 +2,7 @@
 
 A medium charcoal Obsidian theme with warm text and clearly separated panels.
 
-Version 1.0.0. Modes supported: Dark. Tested in Obsidian 1.15.1 on Windows.
+Source version 1.0.1. Modes supported: Dark. Tested in Obsidian 1.15.1 on Windows.
 
 ## Preview
 
