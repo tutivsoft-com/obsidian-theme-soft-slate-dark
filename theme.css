@@ -1,4 +1,4 @@
-/* Soft Slate Dark 3.7.0. MIT. */
+/* Soft Slate Dark 3.7.1. MIT. */
 
 body.theme-dark {
   --background-primary: #232831;
@@ -39,22 +39,23 @@ body.theme-dark {
   --tab-text-color: #d3c9b9;
 }
 
-.workspace-split.mod-horizontal > .workspace-leaf + .workspace-leaf,
-.workspace-ribbon { border-color: var(--background-modifier-border); }
-.menu, .modal { border: 1px solid var(--background-modifier-border); }
+:where(body.theme-dark) .workspace-split.mod-horizontal > .workspace-leaf + .workspace-leaf,
+:where(body.theme-dark) .workspace-ribbon { border-color: var(--background-modifier-border); }
+:where(body.theme-dark) .menu,
+:where(body.theme-dark) .modal { border: 1px solid var(--background-modifier-border); }
 
-.is-mobile .markdown-source-view.mod-cm6 .cm-contentContainer > .cm-content {
+:where(body.theme-dark) .markdown-source-view.mod-cm6:is(.is-mobile *) .cm-contentContainer > .cm-content {
   padding-inline: 8px;
 }
 
-.workspace-leaf-content :focus-visible,
-.modal :focus-visible,
-.menu :focus-visible {
+:where(body.theme-dark) .workspace-leaf-content :focus-visible,
+:where(body.theme-dark) .modal :focus-visible,
+:where(body.theme-dark) .menu :focus-visible {
   outline: 2px solid var(--text-accent);
   outline-offset: -2px;
 }
 
-.markdown-rendered .list-bullet::after,
-.markdown-source-view .list-bullet::after {
+:where(body.theme-dark) .markdown-rendered .list-bullet::after,
+:where(body.theme-dark) .markdown-source-view .list-bullet::after {
   background-color: var(--text-muted);
 }

@@ -2,9 +2,9 @@
 
 A medium charcoal Obsidian theme with warm text and clearly separated panels.
 
-**Status: planning only. No theme code has been written.**
+Historical design plan from 13 November 2026. See the [README](README.md) for the current theme and installation instructions.
 
-Plan date: 13 November 2026. This repository currently contains this planning README only. The name is a descriptive working name; Community name availability must be checked before any future submission.
+At the time of planning, Soft Slate Dark was a working name that still needed a Community name check.
 
 Search keywords: Obsidian theme, soft dark mode, charcoal, medium dark, warm text.
 
@@ -49,7 +49,7 @@ Official references for later implementation:
 - [Submit a theme](https://docs.obsidian.md/Themes/App%20themes/Submit%20your%20theme)
 - [Developer policies](https://docs.obsidian.md/community-directory/developer-policies)
 
-These are future work items. No release, installation instructions, compatibility certification or Community listing is being claimed by this planning repository.
+These milestones were pending when the plan was written. The release and installation links are in the [README](README.md).
 
 ## Acceptance checklist for later implementation
 
@@ -60,6 +60,6 @@ These are future work items. No release, installation instructions, compatibilit
 - [ ] Review screenshots for private information and verify all published documentation and asset paths.
 - [ ] Verify the default branch, release revision and uploaded assets before calling any future release complete.
 
-## Current boundary
+## Original scope
 
-Only repository creation and this Markdown plan are authorised in this task. Do not add theme CSS, manifests, screenshots, release tags or submissions as part of this planning work. Future work stays on this repository's verified primary branch.
+The initial task covered repository creation and this Markdown plan. Theme code, assets and publication were deferred until implementation.

@@ -2,7 +2,7 @@
 
 A medium charcoal Obsidian theme with warm text and clearly separated panels.
 
-Source version 3.7.0. Modes supported: Dark. Tested in Obsidian 1.15.1 on Windows.
+Source version 3.7.1. The theme supports dark mode and requires Obsidian 1.15.1 or later. The original release was tested in Obsidian 1.15.1 on Windows.
 
 ## Preview
 
@@ -10,8 +10,12 @@ Source version 3.7.0. Modes supported: Dark. Tested in Obsidian 1.15.1 on Window
 
 ## Install manually
 
-1. Download `manifest.json` and `theme.css` from [release 1.0.0](https://github.com/tutivsoft-com/obsidian-theme-soft-slate-dark/releases/tag/1.0.0).
+1. Download `manifest.json` and `theme.css` from the [latest published release](https://github.com/tutivsoft-com/obsidian-theme-soft-slate-dark/releases/latest).
 2. Put both files in `.obsidian/themes/Soft Slate Dark/` in your vault.
-3. Open **Settings > Appearance** and select **Soft Slate Dark**. Choose a supported base colour scheme.
+3. Open **Settings > Appearance**, select **Soft Slate Dark**, and set the base colour scheme to **Dark**.
 
 See the [original design plan](PLAN.md). [MIT license](LICENSE).
+
+## Check the source
+
+With Python, `tinycss2` and `cssselect2` installed, run `python -B -m unittest discover -s tests`.
