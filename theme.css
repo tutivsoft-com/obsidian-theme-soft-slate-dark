@@ -1,4 +1,4 @@
-/* Soft Slate Dark 3.7.1. MIT. */
+/* Soft Slate Dark 3.7.2. MIT. */
 
 body.theme-dark {
   --background-primary: #232831;
@@ -37,6 +37,10 @@ body.theme-dark {
   --nav-item-color: #d3c9b9;
   --nav-item-color-active: #f1e6d4;
   --tab-text-color: #d3c9b9;
+}
+
+:where(body.theme-dark) .checkbox-container.is-enabled {
+  --toggle-thumb-color: var(--text-on-accent);
 }
 
 :where(body.theme-dark) .workspace-split.mod-horizontal > .workspace-leaf + .workspace-leaf,

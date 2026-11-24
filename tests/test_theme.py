@@ -18,6 +18,8 @@ MARKUP = """
   <div class="workspace-leaf-content">
     <button id="workspace-focus" data-focus-visible="" />
   </div>
+  <div id="enabled-toggle" class="checkbox-container is-enabled" />
+  <div id="disabled-toggle" class="checkbox-container" />
   <div id="menu" class="menu">
     <button id="menu-focus" data-focus-visible="" />
   </div>
@@ -77,6 +79,11 @@ class SoftSlateDarkTests(unittest.TestCase):
         for element in ("reading-bullet", "editor-bullet"):
             with self.subTest(element=element):
                 self.assertEqual(styles[(element, "after")]["background-color"], "var(--text-muted)")
+
+    def test_enabled_switch_uses_the_accent_foreground(self):
+        styles = self.styles_for("theme-dark")
+        self.assertEqual(styles[("enabled-toggle", None)]["--toggle-thumb-color"], "var(--text-on-accent)")
+        self.assertNotIn(("disabled-toggle", None), styles)
 
     def test_editor_padding_applies_on_mobile_only(self):
         self.assertNotIn("padding-inline", self.styles_for("theme-dark").get(("editor", None), {}))
